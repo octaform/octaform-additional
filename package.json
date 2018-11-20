@@ -1,9 +1,11 @@
 {
   "name": "octaform-additional",
-  "version": "1.0.0",
-  "description": "Octaform Additional Validation",
+  "version": "1.0.1",
+  "description": "Octaform Additional Validation - Octaform helps developers validate forms in an easy way, being completely agnostic any framework.",
   "main": "index.js",
   "homepage": "https://github.com/octaform/octaform#readme",
+  "author": "Christian Fortes",
+  "license": "MIT",
   "keywords": [
     "form",
     "forms",
@@ -20,8 +22,7 @@
     "additional validations"
   ],
   "scripts": {
-    "prepublish": "npm run build:prod",
-    "npm-publish": "npm publish /dist",
+    "npm-publish": "npm run build:prod && npm publish dist/",
     "start": "webpack --watch",
     "test": "jest -c test/jest/config.dev.json --watchAll",
     "build:prod": "jest -c test/jest/config.prod.json && npm run clean && npm run webpack -p --progress",
@@ -33,8 +34,6 @@
     "type": "git",
     "url": "git+https://github.com/octaform/octaform-additional.git"
   },
-  "author": "Christian Fortes",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/octaform/octaform-additional/issues"
   },
@@ -54,6 +53,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "generate-json-webpack-plugin": "^0.3.1",
     "glob": "^7.1.2",
     "jest": "^22.4.3",
     "rimraf": "^2.6.2",

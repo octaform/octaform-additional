@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const GenerateJsonPlugin = require('generate-json-webpack-plugin');
 const glob = require('glob');
 
 const files = glob.sync('./src/*.js');
@@ -70,7 +71,18 @@ module.exports = {
       './README.md',
       './LICENSE.md',
       './.gitignore',
-      './package.json',
     ]),
+    new GenerateJsonPlugin('package.json', {
+      name: Package.name,
+      version: Package.version,
+      description: Package.description,
+      main: Package.main,
+      repository: Package.repository,
+      author: Package.author,
+      license: Package.license,
+      bugs: Package.bugs,
+      homepage: Package.homepage,
+      keywords: Package.keywords,
+    }),
   ],
 };
