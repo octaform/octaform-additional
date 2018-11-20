@@ -52,7 +52,7 @@ Letter            | Only letters is accepted `[A-Z]`                        | le
 Number            | Only numbers is accepted `[0-9]`                        | number          | `number: true`
 MinLength         | Define minlength of text                                | minlength       | `minlength: 3`
 MaxLength         | Define maxlength of text                                | maxlength       | `maxlength: 12`
-Maxsize `(bytes)` | Define the max size of files                            | maxsize         | `maxsize: 50000`
+MaxSize `(bytes)` | Define the max size of files                            | maxsize         | `maxsize: 50000`
 MinChecked        | Define the minimun of checkboxes checked                | minchecked      | `minchecked: 2`
 Required          | Make that the field be required                         | required        | `required: true`
 ValueNotEquals    | Define one value that shouldn't be equal                | valueNotEquals  | `valueNotEquals: 'Dog'`
