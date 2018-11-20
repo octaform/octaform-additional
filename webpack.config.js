@@ -84,6 +84,7 @@ module.exports = {
       homepage: Package.homepage,
       keywords: Package.keywords,
       files: Package.files,
+      dependencies: {},
     }),
   ],
 };
