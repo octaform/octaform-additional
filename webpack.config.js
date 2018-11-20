@@ -4,12 +4,20 @@ const path = require('path');
 const webpack = require('webpack');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const glob = require('glob');
+
+const files = glob.sync('./src/*.js');
+const entryList = files.reduce((acc, file) => {
+  const pattern = /^(.*\/)?(?:$|(.+?)(?:(\.[^.]*$)|$))/g;
+  const name = pattern.exec(file);
+  return Object.assign(acc, {
+    [name[2]]: file,
+  });
+}, {});
 
 module.exports = {
   devtool: 'inline-source-map',
-  entry: {
-    index: './src/index.js',
-  },
+  entry: entryList,
   output: {
     library: Package.name,
     libraryTarget: 'umd',

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'minchecked',
   message: 'Please select at least {0} options',
   fn: (value, element, param) => {

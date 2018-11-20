@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'extension',
   message: 'Please choose a file with a valid extension: (...{})',
   fn: (value, element, params) => {

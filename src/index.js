@@ -9,7 +9,20 @@ import required from './required';
 import valueNotEquals from './valueNotEquals';
 import minchecked from './minchecked';
 
-module.exports = [
+export {
+  email,
+  extension,
+  letter,
+  maxlength,
+  minlength,
+  maxsize,
+  number,
+  required,
+  valueNotEquals,
+  minchecked,
+};
+
+export default [
   email,
   extension,
   letter,

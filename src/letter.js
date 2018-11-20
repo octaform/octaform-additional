@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'letter',
   message: 'Please enter only letters',
   fn: (value) => {

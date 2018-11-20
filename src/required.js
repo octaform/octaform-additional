@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'required',
   message: 'This field is required',
   fn: (value, element) => {

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'maxsize',
   message: 'File size must not exceed {0} bytes',
   fn: (value, element, param) => {

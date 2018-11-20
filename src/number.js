@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'number',
   message: 'Please enter a valid number',
   fn: (value) => {

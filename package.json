@@ -20,6 +20,8 @@
     "additional validations"
   ],
   "scripts": {
+    "prepublish": "npm run build:prod",
+    "npm-publish": "npm publish /dist",
     "start": "webpack --watch",
     "test": "jest -c test/jest/config.dev.json --watchAll",
     "build:prod": "jest -c test/jest/config.prod.json && npm run clean && npm run webpack -p --progress",
