@@ -6,7 +6,7 @@
 Octaform helps developers validate forms in an easy way, being completely agnostic to framework, you can use anywhere you want.
 
 ## Getting Started
-This package is an additional package that enables you to add some pre-set validations, if you are searching for Octaform Validate please access the official documentation [here](https://github.com/octaform/octaform).
+This package is an additional package that enables you to add some pre-set validations, if you are searching for Octaform Validate please access the official documentation [https://github.com/octaform/octaform](https://github.com/octaform/octaform)
 
 Install using `yarn`:
 ```
@@ -56,3 +56,16 @@ Maxsize         | Define the max size of files                            | maxs
 MinChecked      | Define the minimun of checkboxes checked                | minchecked
 Required        | Make that the field be required                         | required
 ValueNotEquals  | Define one value that shouldn't be equal                | valueNotEquals
+
+## Demo
+See the validations working on our demo page: https://octaform.github.io/demo
+
+## Changelog
+
+[Check out releases](https://github.com/octaform/octaform-additional/releases)
+
+## License
+
+[The MIT License (MIT)](/LICENSE.md)
+
+Copyright (c) 2018 Christian Fortes
