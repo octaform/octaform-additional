@@ -44,18 +44,18 @@ Octaform.validator.add([
 
 ## Available validations
 
-Validations       | Description                                             | Namespace       | How to use
-------------------|---------------------------------------------------------|-----------------|--------------------
-Email             | Only valid emails                                       | email           | `email: true`
-Extension         | Only valid file extensions, e.g. `png`, `jpg`           | extension       | `extension: ['png', 'jpg']`
-Letter            | Only letters is accepted `[A-Z]`                        | letter          | `letter: true`
-Number            | Only numbers is accepted `[0-9]`                        | number          | `number: true`
-MinLength         | Define minlength of text                                | minlength       | `minlength: 3`
-MaxLength         | Define maxlength of text                                | maxlength       | `maxlength: 12`
-MaxSize `(bytes)` | Define the max size of files                            | maxsize         | `maxsize: 50000`
-MinChecked        | Define the minimun of checkboxes checked                | minchecked      | `minchecked: 2`
-Required          | Make that the field be required                         | required        | `required: true`
-ValueNotEquals    | Define one value that shouldn't be equal                | valueNotEquals  | `valueNotEquals: 'Dog'`
+Validations       | Description                                       | How to use
+------------------|---------------------------------------------------|--------------------
+email             | Only valid emails                                 | `email: true`
+extension         | Only valid file extensions, e.g. `png`, `jpg`     | `extension: ['png', 'jpg']`
+letter            | Only letters is accepted `[A-Z]`                  | `letter: true`
+number            | Only numbers is accepted `[0-9]`                  | `number: true`
+minlength         | Define minlength of text                          | `minlength: 3`
+maxlength         | Define maxlength of text                          | `maxlength: 12`
+maxsize `(bytes)` | Define the max size of files                      | `maxsize: 50000`
+minchecked        | Define the minimun of checkboxes checked          | `minchecked: 2`
+required          | Make that the field be required                   | `required: true`
+valueNotEquals    | Define one value that shouldn't be equal          | `valueNotEquals: 'Dog'`
 
 ## Demo
 See the validations working on our demo page: https://octaform.github.io/demo
