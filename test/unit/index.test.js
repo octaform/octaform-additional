@@ -1,9 +1,7 @@
-describe('my beverage', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(true).toBe(true);
-  });
+import Modules from '../../src';
 
-  test('adds 2 + 2 to equal 3', () => {
-    expect(true).toBe(true);
+describe('Index Validation', () => {
+  test('Test: Should be defined all validations', () => {
+    expect(Modules).toHaveLength(10);
   });
 });

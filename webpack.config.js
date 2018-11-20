@@ -3,20 +3,13 @@ const Package = require('./package.json');
 const path = require('path');
 const webpack = require('webpack');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
-const glob = require('glob');
-
-const files = glob.sync('./src/*.js');
-const entryList = files.reduce((acc, file) => {
-  const pattern = /^(.*\/)?(?:$|(.+?)(?:(\.[^.]*$)|$))/g;
-  const name = pattern.exec(file);
-  return Object.assign(acc, {
-    [name[2]]: file,
-  });
-}, {});
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devtool: 'inline-source-map',
-  entry: entryList,
+  entry: {
+    index: './src/index.js',
+  },
   output: {
     library: Package.name,
     libraryTarget: 'umd',
@@ -34,6 +27,26 @@ module.exports = {
     }],
   },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      test: /\.js$/,
+      exclude: /node_modules/,
+      sourceMap: false,
+      minimize: true,
+      extractComments: true,
+      ecma: 5,
+      warnings: false,
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        toplevel: true,
+        pure_getters: true,
+        warnings: false,
+      },
+      mangle: false,
+      ie8: true,
+      safari10: true,
+      toplevel: true,
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['index'],
     }),
@@ -45,5 +58,11 @@ module.exports = {
       VERSION: JSON.stringify(Package.version),
       'process.env.NODE_ENV': ENV,
     }),
+    new CopyWebpackPlugin([
+      './README.md',
+      './LICENSE.md',
+      './.gitignore',
+      './package.json',
+    ]),
   ],
 };

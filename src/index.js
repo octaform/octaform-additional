@@ -8,7 +8,6 @@ import number from './number';
 import required from './required';
 import valueNotEquals from './valueNotEquals';
 import minchecked from './minchecked';
-import teste from './teste';
 
 module.exports = [
   email,
@@ -21,5 +20,4 @@ module.exports = [
   required,
   valueNotEquals,
   minchecked,
-  teste,
 ];
