@@ -8,7 +8,17 @@ Octaform helps developers validate forms in an easy way, being completely agnost
 ## Getting Started
 This package is an additional package that enables you to add some pre-set validations, if you are searching for Octaform Validate please access the official documentation [here](https://github.com/octaform/octaform).
 
-To start using these validations you should import this package:
+Install using `yarn`:
+```
+yarn add octaform-additional
+```
+
+Or via `npm`:
+```
+npm install octaform-additional --save
+```
+
+After install import the `octaform-additional` and start to use:
 
 ```js
 import { email, extension } from 'octaform-additional';
