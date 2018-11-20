@@ -6,7 +6,7 @@
 Octaform helps developers validate forms in an easy way, being completely agnostic to framework, you can use anywhere you want.
 
 ## Getting Started
-This package is an additional package that enables you to add some pre-set validations, if you are searching for Octaform Validate please access the official documentation [https://github.com/octaform/octaform](https://github.com/octaform/octaform)
+This package is an additional package that enables you to add some pre-set validations, if you are searching for Octaform Validate please access the official documentation [https://github.com/octaform/octaform](https://github.com/octaform/octaform?target=_blank)
 
 Install using `yarn`:
 ```
@@ -62,10 +62,10 @@ See the validations working on our demo page: https://octaform.github.io/demo
 
 ## Changelog
 
-[Check out releases](https://github.com/octaform/octaform-additional/releases)
+[Check out releases](https://github.com/octaform/octaform-additional/releases?target=_blank)
 
 ## License
 
-[The MIT License (MIT)](/LICENSE.md)
+[The MIT License (MIT)](/LICENSE.md?target=_blank)
 
 Copyright (c) 2018 Christian Fortes
