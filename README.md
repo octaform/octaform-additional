@@ -47,9 +47,9 @@ Octaform.validator.add([
 Validations     | Description                                             | Namespace
 ----------------|---------------------------------------------------------|-----------
 Email           | Only valid emails                                       | email
-Extension       | Only valid file extensions, e.g. `png`, `jpg`, `etc...` | extension
+Extension       | Only valid file extensions, e.g. `[png, jpg]`           | extension
 Letter          | Only letters is accepted `[A-Z]`                        | letter
-Number          | Only numbers is accepted                                | number
+Number          | Only numbers is accepted `[0-9]`                        | number
 MinLength       | Define minlength of text                                | minlength
 MaxLength       | Define maxlength of text                                | maxlength
 Maxsize         | Define the max size of files                            | maxsize
