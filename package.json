@@ -25,7 +25,7 @@
     "additional validations"
   ],
   "scripts": {
-    "npm-publish": "npm run build:prod && npm publish dist/ --dry-run",
+    "npm-publish": "npm run build:prod && npm publish dist --dry-run",
     "start": "webpack --watch",
     "test": "jest -c test/jest/config.dev.json --watchAll",
     "build:prod": "jest -c test/jest/config.prod.json && npm run clean && npm run webpack -p --progress",
