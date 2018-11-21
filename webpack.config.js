@@ -69,7 +69,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       './README.md',
-      './LICENSE.md',
+      './LICENSE',
       './.gitignore',
     ]),
     new GenerateJsonPlugin('package.json', {
