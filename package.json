@@ -1,7 +1,7 @@
 {
   "name": "octaform-additional",
-  "version": "1.0.11",
-  "description": "Octaform Additional Validation - Octaform helps developers validate forms in an easy way, being completely agnostic any framework.",
+  "version": "1.0.12",
+  "description": "Octaform Additional Validation - Presets validation to use with Octaform validate, this package contains validations such as email, extension, minlength, and others",
   "main": "index.js",
   "homepage": "https://github.com/octaform/octaform#readme",
   "author": "Christian Fortes",
