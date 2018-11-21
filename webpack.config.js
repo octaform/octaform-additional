@@ -83,7 +83,7 @@ module.exports = {
       bugs: Package.bugs,
       homepage: Package.homepage,
       keywords: Package.keywords,
-      files: Package.files,
+      engines: Package.engines,
       dependencies: {},
     }),
   ],
