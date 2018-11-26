@@ -1,5 +1,6 @@
 {
   "name": "octaform-additional",
+  "alias": "Octaform Additional",
   "version": "1.0.13",
   "description": "Octaform Additional Validation - Presets validation to use with Octaform validate, this package contains validations such as email, extension, minlength, and others",
   "main": "index.js",
