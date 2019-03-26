@@ -72,4 +72,4 @@ See the validations working on our demo page: https://octaform.github.io/demo
 
 [The MIT License (MIT)](/LICENSE)
 
-Copyright (c) 2018 Christian Fortes
+Copyright (c) 2019 Christian Fortes
