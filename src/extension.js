@@ -1,6 +1,7 @@
 export default {
   name: 'extension',
   message: 'Please choose a file with a valid extension: (...{})',
+  paramType: Array,
   fn: (value, element, params) => {
     const file = Array.from(element[0].files);
     return file.some((item) => {

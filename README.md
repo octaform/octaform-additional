@@ -58,6 +58,8 @@ maxsize `(bytes)` | Define the max size of files                      | `maxsize
 minchecked        | Define the minimun of checkboxes checked          | `minchecked: 2`
 required          | Make that the field be required                   | `required: true`
 valueNotEquals    | Define one value that shouldn't be equal          | `valueNotEquals: 'Dog'`
+url               | Require a valid url                               | `url: true`
+range             | Require a given value range                       | `range: [5, 8]`
 
 ## Demo
 See the validations working on our demo page: https://octaform.github.io/demo

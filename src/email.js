@@ -1,7 +1,8 @@
 export default {
   name: 'email',
   message: 'Please enter a valid email',
+  paramType: Boolean,
   fn: (value) => {
-    return (/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i).test(value) || false;
+    return (/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i).test(value);
   },
 };

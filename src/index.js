@@ -8,8 +8,10 @@ import number from './number';
 import required from './required';
 import valueNotEquals from './valueNotEquals';
 import minchecked from './minchecked';
+import url from './url';
+import range from './range';
 
-export {
+module.exports = {
   email,
   extension,
   letter,
@@ -20,17 +22,6 @@ export {
   required,
   valueNotEquals,
   minchecked,
+  url,
+  range,
 };
-
-export default [
-  email,
-  extension,
-  letter,
-  maxlength,
-  minlength,
-  maxsize,
-  number,
-  required,
-  valueNotEquals,
-  minchecked,
-];

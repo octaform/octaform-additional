@@ -1,7 +1,7 @@
 {
   "name": "octaform-additional",
   "alias": "Octaform Additional",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Octaform Additional Validation - Presets validation to use with Octaform validate, this package contains validations such as email, extension, minlength, and others",
   "main": "index.js",
   "homepage": "https://github.com/octaform/octaform#readme",
@@ -26,8 +26,6 @@
     "additional validations"
   ],
   "scripts": {
-    "prepublish": "npm run build:prod",
-    "npm-publish": "npm publish dist --dry-run",
     "start": "webpack --watch",
     "test": "jest -c test/jest/config.dev.json --watchAll",
     "build:prod": "jest -c test/jest/config.prod.json && npm run clean && npm run webpack -p --progress",

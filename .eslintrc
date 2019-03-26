@@ -20,7 +20,9 @@
     "import/no-extraneous-dependencies": 0,
     "prefer-const": 1,
     "no-plusplus": 0,
-    "no-undef": 0
+    "no-undef": 0,
+    "function-paren-newline": 0,
+    "comma-dangle": 0
   },
   "globals": {
     "document": true,
