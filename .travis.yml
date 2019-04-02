@@ -6,9 +6,10 @@ env:
   global:
     - APP_ENV=$APP_ENV
 
-install:
-  - rm -rf ./node_modules package-lock.json
+before_install:
   - npm i -g makeshift && makeshift -s @bcoe -r registry.npmjs.org
+
+install:
   - npm install
 
 script:
@@ -19,12 +20,12 @@ before_deploy:
   - cd dist/
 
 deploy:
-  skip_cleanup: true
-  keep-history: true
   provider: npm
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN
+  skip_cleanup: true
+  keep-history: true
   on:
     branch: master
     tags: true
-    repo: octaform/octaform-additional
+    repo: $GITHUB_REPO
