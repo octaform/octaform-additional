@@ -7,9 +7,11 @@ import maxsize from './maxsize';
 import number from './number';
 import required from './required';
 import valueNotEquals from './valueNotEquals';
+import valueEquals from './valueEquals';
 import minchecked from './minchecked';
 import url from './url';
 import range from './range';
+import equalTo from './equalTo';
 
 module.exports = {
   email,
@@ -21,7 +23,9 @@ module.exports = {
   number,
   required,
   valueNotEquals,
+  valueEquals,
   minchecked,
   url,
   range,
+  equalTo,
 };

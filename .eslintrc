@@ -22,7 +22,10 @@
     "no-plusplus": 0,
     "no-undef": 0,
     "function-paren-newline": 0,
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "quote-props": 0,
+    "quotes": 0,
+    "import/no-dynamic-require": 0
   },
   "globals": {
     "document": true,

@@ -36,12 +36,12 @@ Octaform.validator.add([
 
 `OR`
 ```js
-import VALIDATIONS from 'octaform-additional';
+import validation from 'octaform-additional';
 
 // Add the validations object into array
 Octaform.validator.add([
-  VALIDATIONS.email,
-  VALIDATIONS.extension
+  validation.email,
+  validation.extension
 ])
 
 ```
@@ -59,9 +59,11 @@ maxlength         | Define maxlength of text                          | `maxleng
 maxsize `(bytes)` | Define the max size of files                      | `maxsize: 50000`
 minchecked        | Define the minimun of checkboxes checked          | `minchecked: 2`
 required          | Make that the field be required                   | `required: true`
+valueEquals       | Require a value to be the same as the predefined  | `valueEquals: 'Dog'`
 valueNotEquals    | Define one value that shouldn't be equal          | `valueNotEquals: 'Dog'`
 url               | Require a valid url                               | `url: true`
 range             | Require a given value range                       | `range: [5, 8]`
+equalTo           | Requires the field to be the same as another one  | `equalTo: #fieldId`
 
 ## Demo
 See the validations working on our demo page: https://octaform.github.io/demo
