@@ -4,17 +4,14 @@ node_js:
 
 env:
   global:
-    - NODE_ENV=$APP_ENV
-
-cache:
-  directories:
-    - "node_modules"
+    - APP_ENV=$APP_ENV
 
 branches:
   only:
     - master
 
 install:
+  - rm -rf ./node_modules package-lock.json
   - npm i -g makeshift && makeshift -s @bcoe -r registry.npmjs.org
   - npm install
 
