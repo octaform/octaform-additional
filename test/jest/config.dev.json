@@ -2,7 +2,6 @@
   "verbose": true,
   "rootDir": "../../",
   "testURL": "http://localhost",
-  "testEnvironment": "node",
   "coverageDirectory": "test/coverage/",
   "testMatch": [
     "<rootDir>/test/unit/*.test.js"
@@ -14,8 +13,5 @@
   "collectCoverageFrom": [
     "src/**/*.js",
     "!**/node_modules/**"
-  ],
-  "transformIgnorePatterns": [
-    "<rootDir>/node_modules/"
   ]
 }

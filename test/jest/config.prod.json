@@ -2,11 +2,7 @@
   "verbose": true,
   "rootDir": "../unit",
   "testURL": "http://localhost",
-  "testEnvironment": "node",
   "testMatch": [
     "<rootDir>/*.test.js"
-  ],
-  "transformIgnorePatterns": [
-    "<rootDir>/node_modules/"
   ]
 }
