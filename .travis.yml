@@ -6,10 +6,6 @@ env:
   global:
     - APP_ENV=$APP_ENV
 
-branches:
-  only:
-    - master
-
 install:
   - rm -rf ./node_modules package-lock.json
   - npm i -g makeshift && makeshift -s @bcoe -r registry.npmjs.org
@@ -29,4 +25,6 @@ deploy:
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN
   on:
+    branch: master
     tags: true
+    repo: octaform/octaform-additional
