@@ -3,7 +3,7 @@ import modules from '../../src';
 describe('Index Validation', () => {
   test('Test: Should be defined all validations', () => {
     const validations = Object.keys(modules);
-    expect(validations).toHaveLength(14);
+    expect(validations).toHaveLength(15);
     expect(validations).toEqual(
       expect.arrayContaining([
         'email', 
@@ -19,7 +19,8 @@ describe('Index Validation', () => {
         'url',
         'valueNotEquals',
         'equalTo',
-        'valueEquals'
+        'valueEquals',
+        'pattern'
       ])
     );
   });
