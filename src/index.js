@@ -12,6 +12,7 @@ import minchecked from './minchecked';
 import url from './url';
 import range from './range';
 import equalTo from './equalTo';
+import pattern from './pattern';
 
 module.exports = {
   email,
@@ -28,4 +29,5 @@ module.exports = {
   url,
   range,
   equalTo,
+  pattern,
 };

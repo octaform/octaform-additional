@@ -64,6 +64,7 @@ valueNotEquals    | Define one value that shouldn't be equal          | `valueNo
 url               | Require a valid url                               | `url: true`
 range             | Require a given value range                       | `range: [5, 8]`
 equalTo           | Requires the field to be the same as another one  | `equalTo: #fieldId`
+pattern           | Requires a value to match a regex pattern         | `pattern: ^[0-9]+$`
 
 ## Demo
 See the validations working on our demo page: https://octaform.github.io/demo
