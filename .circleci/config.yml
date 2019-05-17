@@ -53,15 +53,16 @@ jobs:
 
   create_artifact:
     <<: *defaults
-    - attach_workspace:
-        at: ~/tmp
+    steps:
+      - attach_workspace:
+          at: ~/tmp
 
-    - run:
-        name: Creating Artifacts
-        command: |
-          mkdir /tmp/artifacts;
-          zip -r /tmp/artifacts/dist-$CIRCLE_BUILD_NUM.zip dist/
-          
+      - run:
+          name: Creating Artifacts
+          command: |
+            mkdir /tmp/artifacts;
+            zip -r /tmp/artifacts/dist-$CIRCLE_BUILD_NUM.zip dist/
+            
   deploy:
     <<: *defaults
     steps:
