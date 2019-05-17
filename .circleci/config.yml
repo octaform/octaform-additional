@@ -51,6 +51,17 @@ jobs:
           root: ~/tmp
           paths: .
 
+  create_artifact:
+    <<: *defaults
+    - attach_workspace:
+        at: ~/tmp
+
+    - run:
+        name: Creating Artifacts
+        command: |
+          mkdir /tmp/artifacts;
+          zip -r /tmp/artifacts/dist-$CIRCLE_BUILD_NUM.zip dist/
+          
   deploy:
     <<: *defaults
     steps:
@@ -75,6 +86,11 @@ workflows:
           filters:
             branches:
               only: master
+      
+      # Create and save artifact
+      - create_artifact:
+          requires:
+            - build
 
       # Publish to NPM
       - deploy:
