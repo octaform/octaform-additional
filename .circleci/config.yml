@@ -79,7 +79,7 @@ jobs:
 workflows:
   version: 2
   # Build and test
-  build:
+  build_flow:
     jobs:
       # Build application
       - build:
