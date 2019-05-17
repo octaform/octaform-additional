@@ -64,7 +64,7 @@ jobs:
             zip -r /tmp/artifacts/dist-$CIRCLE_BUILD_NUM.zip dist/
       
       - store_artifacts:
-          path: /tmp/artifacts/dist-$CIRCLE_BUILD_NUM.zip
+          path: /tmp/artifacts/dist-${$CIRCLE_BUILD_NUM}.zip
 
   deploy:
     <<: *defaults
