@@ -47,24 +47,20 @@ jobs:
           name: Building
           command: npm run build:prod
 
-      - persist_to_workspace:
-          root: ~/tmp
-          paths: .
-
-  create_artifact:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/tmp
-
+      # Create and Save Artifact
       - run:
           name: Creating Artifacts
           command: |
-            mkdir /tmp/artifacts;
-            zip -r /tmp/artifacts/dist.zip dist/
-      
+            mkdir ./artifacts;
+            zip -r ./artifacts/dist.zip dist/
+
+      # Store Artifact
       - store_artifacts:
-          path: /tmp/artifacts/dist.zip
+          path: ./artifacts/dist.zip
+
+      - persist_to_workspace:
+          root: ~/tmp
+          paths: .
 
   deploy:
     <<: *defaults
@@ -83,18 +79,13 @@ jobs:
 workflows:
   version: 2
   # Build and test
-  build_and_publish:
+  build:
     jobs:
       # Build application
       - build:
           filters:
             branches:
               only: master
-      
-      # Create and save artifact
-      - create_artifact:
-          requires:
-            - build
 
       # Publish to NPM
       - deploy:
