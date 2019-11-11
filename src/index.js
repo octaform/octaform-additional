@@ -14,7 +14,7 @@ import range from './range';
 import equalTo from './equalTo';
 import pattern from './pattern';
 
-module.exports = {
+export default {
   email,
   extension,
   letter,
