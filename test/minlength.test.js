@@ -1,4 +1,4 @@
-import Minlength from '../../src/minlength';
+import Minlength from '../src/minlength';
 
 describe('Minlength Validation', () => {
   test('Test: Should pass when min be 2 and typed 4', () => {

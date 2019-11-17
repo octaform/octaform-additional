@@ -2,6 +2,10 @@ const Package = require('../package.json');
 const path = require('path');
 const webpack = require('webpack');
 const glob = require('glob');
+const GenerateJsonPlugin = require('generate-json-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const npmConfig = require('./build.npm');
+const banner = require('./banner');
 
 const files = glob.sync('./src/*.js');
 const entryList = files.reduce((acc, file) => {
@@ -13,9 +17,12 @@ const entryList = files.reduce((acc, file) => {
 }, {});
 
 module.exports = {
-  entry: entryList,
+  entry: {
+    ...entryList,
+    [`${Package.name}.min`]: Package.main
+  },
   output: {
-    library: Package.alias,
+    library: Package.name,
     libraryTarget: 'umd',
     umdNamedDefine: true,
     filename: '[name].js',
@@ -24,15 +31,18 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js$/,
-      use: 'babel-loader',
+      use: ['babel-loader'],
     }],
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['index'],
+    new GenerateJsonPlugin('package.json', npmConfig.package),
+    new webpack.BannerPlugin({
+      banner: banner(),
+      raw: true,
     }),
-    new webpack.EnvironmentPlugin([
-      'NODE_ENV',
-    ])
+    new CopyWebpackPlugin([
+      './LICENSE',
+      './README.md',
+    ]),
   ],
 };

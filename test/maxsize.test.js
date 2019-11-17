@@ -1,4 +1,4 @@
-import Maxsize from '../../src/maxsize';
+import Maxsize from '../src/maxsize';
 
 describe('Maxsize Validation', () => {
   const element = [{

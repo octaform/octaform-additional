@@ -1,4 +1,4 @@
-import Required from '../../src/required';
+import Required from '../src/required';
 
 describe('Required Validation', () => {
   const element = [{ length: 1 }];

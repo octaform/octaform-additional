@@ -1,4 +1,4 @@
-import Letter from '../../src/letter';
+import Letter from '../src/letter';
 
 describe('Letter Validation', () => {
   test('Test: Should be a valid letter', () => {

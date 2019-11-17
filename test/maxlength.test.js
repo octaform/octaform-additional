@@ -1,4 +1,4 @@
-import Maxlength from '../../src/maxlength';
+import Maxlength from '../src/maxlength';
 
 describe('Maxlength Validation', () => {
   test('Test: Should have a valid length', () => {

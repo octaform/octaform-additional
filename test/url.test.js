@@ -1,4 +1,4 @@
-import Url from '../../src/url';
+import Url from '../src/url';
 
 describe('Url Validation', () => {
   test('Test: Should be a valid url', () => {

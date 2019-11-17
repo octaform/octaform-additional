@@ -1,4 +1,4 @@
-import Minchecked from '../../src/minchecked';
+import Minchecked from '../src/minchecked';
 
 describe('Minchecked Validation', () => {
   const elements = [

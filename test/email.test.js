@@ -1,4 +1,4 @@
-import Email from '../../src/email';
+import Email from '../src/email';
 
 describe('Email Validation', () => {
   test('Test: Should be a valid email', () => {

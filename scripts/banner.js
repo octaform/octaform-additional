@@ -13,7 +13,7 @@ module.exports = () => {
 
   return (`
 /**
-  * @license ${Package.alias} v${Package.version}
+  * @license ${Package.name} v${Package.version}
   * ${Package.repository.url}
   * Copyright (c) ${year()}, ${Package.author}
   * Released under the ${Package.license} License.

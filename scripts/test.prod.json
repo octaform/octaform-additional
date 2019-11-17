@@ -1,6 +1,6 @@
 {
   "verbose": true,
-  "rootDir": "../unit",
+  "rootDir": "../test/",
   "testURL": "http://localhost",
   "testMatch": [
     "<rootDir>/*.test.js"

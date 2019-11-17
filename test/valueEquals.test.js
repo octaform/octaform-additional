@@ -1,4 +1,4 @@
-import valueEquals from '../../src/valueEquals';
+import valueEquals from '../src/valueEquals';
 
 describe('valueEquals Validation', () => {
   test('Test: Should be equals', () => {

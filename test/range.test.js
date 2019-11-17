@@ -1,4 +1,4 @@
-import Range from '../../src/range';
+import Range from '../src/range';
 
 describe('Range Validation', () => {
   test('Test: Should be a valid range', () => {

@@ -1,13 +1,13 @@
-import Pattern from '../../src/pattern';
+import Numbers from '../src/number';
 
-describe('Pattern Validation', () => {
+describe('Number Validation', () => {
   test('Test: Should pass when typed only numbers', () => {
-    const isValid = Pattern.fn('250', null, '^[0-9]+$');
+    const isValid = Numbers.fn('250');
     expect(isValid).toBe(true);
   });
 
   test('Test: Should fail when typed letters and number', () => {
-    const isValid = Pattern.fn('ws4', null, '^[0-9]+$');
+    const isValid = Numbers.fn('ws4');
     expect(isValid).toBe(false);
   });
 });

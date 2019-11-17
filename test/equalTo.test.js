@@ -1,5 +1,5 @@
 import browser from './__mocks__/browser';
-import equalTo from '../../src/equalTo';
+import equalTo from '../src/equalTo';
 
 describe('equalTo Validation', () => {
   beforeAll(() => browser());

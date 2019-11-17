@@ -1,9 +1,12 @@
 {
   "presets": [
-    "es2015"
+    ["@babel/preset-env", {
+      "modules": "commonjs"
+    }]
   ],
   "plugins": [
-    ["transform-object-rest-spread", { "useBuiltIns": true }],
-    "add-module-exports"
+    ["@babel/plugin-proposal-object-rest-spread", {
+        "useBuiltIns": true
+    }]
   ]
 }

@@ -1,4 +1,4 @@
-import ValueNotEquals from '../../src/valueNotEquals';
+import ValueNotEquals from '../src/valueNotEquals';
 
 describe('ValueNotEquals Validation', () => {
   test('Test: Should pass when values aren\'t equals', () => {

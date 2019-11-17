@@ -1,4 +1,4 @@
-import Extension from '../../src/extension';
+import Extension from '../src/extension';
 
 describe('Extension Validation', () => {
   const element = [{

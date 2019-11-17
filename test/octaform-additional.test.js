@@ -1,4 +1,4 @@
-import modules from '../../src';
+import modules from '../src/octaform-additional';
 
 describe('Index Validation', () => {
   test('Test: Should be defined all validations', () => {
