@@ -13,6 +13,7 @@ import url from './url';
 import range from './range';
 import equalTo from './equalTo';
 import pattern from './pattern';
+import date from './date';
 
 module.exports = {
   email,
@@ -30,4 +31,5 @@ module.exports = {
   range,
   equalTo,
   pattern,
+  date
 };

@@ -3,11 +3,11 @@ import modules from '../src/octaform-additional';
 describe('Index Validation', () => {
   test('Test: Should be defined all validations', () => {
     const validations = Object.keys(modules);
-    expect(validations).toHaveLength(15);
+    expect(validations).toHaveLength(16);
     expect(validations).toEqual(
       expect.arrayContaining([
-        'email', 
-        'extension', 
+        'email',
+        'extension',
         'letter',
         'maxlength',
         'maxsize',
@@ -20,7 +20,8 @@ describe('Index Validation', () => {
         'valueNotEquals',
         'equalTo',
         'valueEquals',
-        'pattern'
+        'pattern',
+        'date'
       ])
     );
   });
