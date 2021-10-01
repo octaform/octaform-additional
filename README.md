@@ -39,7 +39,7 @@ Octaform.validator.add([
 
 Validations       | Description                                           | How to use
 ------------------|-------------------------------------------------------|--------------------
-date              | Given a date validate the format `( / | - | . |  )`   | `date: MM/DD/YYYY | M/D/YY`
+date              | Given a date validate the format `( / \| - )`         | `date: MM/DD/YYYY \| M/D/YY`
 email             | Only valid emails                                     | `email: true`
 equalTo           | Requires the field to have the same value as another  | `equalTo: <HTML_Attribute or ID>`
 extension         | Only valid file extensions, e.g. `png`, `jpg`         | `extension: ['png', 'jpg']`
